@@ -15,8 +15,8 @@ describe 'Search for stations in 80203', type: :feature do
     fill_in 'q', with: 80203
     click_on 'Locate'
 
-    # expectations
+    expect(current_path).to eq("/search")
   end
 end
 
-https://api.data.gov/nrel/alt-fuel-stations/v1/nearest.json?limit=10&api_key=HU37sJpsOJqSes3Ulap7ZbEOqTQjby45OJq2FQsl&radius=6&location=Denver,CO&fuel_type  =ELEC,LPG
+# https://api.data.gov/nrel/alt-fuel-stations/v1/nearest.json?limit=10&api_key=HU37sJpsOJqSes3Ulap7ZbEOqTQjby45OJq2FQsl&radius=6&location=Denver,CO&fuel_type  =ELEC,LPG
