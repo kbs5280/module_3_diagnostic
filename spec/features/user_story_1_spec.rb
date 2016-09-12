@@ -16,7 +16,6 @@ describe 'Search for stations in 80203', type: :feature do
     click_on 'Locate'
 
     # expectations
-
   end
 end
 
