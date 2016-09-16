@@ -1,4 +1,7 @@
-<h1>Nearest Stations</h1>
-<p>
-  <%= "Number of stations: #{@stations_count}"  %>
-</p>
+<% @nearest_stations.each do |station| %>
+  <%= station.name %>
+  <%= station.address %>
+  <%= station.fuel_type %>
+  <%= station.distance %>
+  <%= station.access_time %>
+<% end %>
